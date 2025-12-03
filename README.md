@@ -77,17 +77,3 @@ npm run build
 # Start
 npm start
 ```
-
-Fichiers créés/à créer recommandés
-- `README.md` (tu as actuellement celui-ci)
-- `src/` (server, routes, worker, services)
-- `tests/` (unit/integration)
-- `docker-compose.yml` (Postgres + MinIO pour dev)
-- `infra/` (IaC minimal: Terraform/ARM/CloudFormation exemples)
-
-Prochaines étapes proposées (choisis une):
-1. Générer le scaffold Express + TypeScript + endpoint `POST /upload/request` (prototype local avec MinIO optionnel).
-2. Écrire le worker de traitement et un exemple de SQS/SNS event (simulation).
-3. Créer `docker-compose.yml` avec Postgres + MinIO pour tests locaux.
-4. Produire un playbook sécurité détaillé (GDPR / KYC) pour conformité.
-
