@@ -91,8 +91,3 @@ Prochaines étapes proposées (choisis une):
 3. Créer `docker-compose.yml` avec Postgres + MinIO pour tests locaux.
 4. Produire un playbook sécurité détaillé (GDPR / KYC) pour conformité.
 
-Demande-moi quelle option tu veux (par ex. `1` pour scaffold prototype). Si tu veux que je continue, je vais marquer la todo correspondante comme complétée et je peux générer le scaffold automatiquement.
-
----
-Fait: `README.md` créé à la racine du projet (`c:\Users\modes\Desktop\testAPI\README.md`).
-
