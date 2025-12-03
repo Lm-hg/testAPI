@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  minio:
+    image: minio/minio:latest
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    command: server /data
+    ports:
+      - '9000:9000'
+    volumes:
+      - minio-data:/data
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: testapi
+    ports:
+      - '5432:5432'
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+
+volumes:
+  minio-data:
+  pg-data:
